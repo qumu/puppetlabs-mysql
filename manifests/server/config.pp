@@ -31,6 +31,7 @@ class mysql::server::config {
         mode   => '0755',
         owner  => $options['mysqld']['user'],
         group  => $options['mysqld']['user'],
+        recurse => true
       }
     }
   }
